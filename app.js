@@ -1,10 +1,10 @@
 var express = require("express");
-
 const path = require("path");
+const port = process.env.PORT || 8080
 
 
-var app = express();app.listen(3030, () => {
-    console.log("Server running on port 3030");
+var app = express();app.listen(port, () => {
+    console.log("Server running on port " + port);
 });
 
 //app.use(bodyParser.json())
